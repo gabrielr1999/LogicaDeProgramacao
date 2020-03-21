@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha(){
+
+        document.write("<br>");
+    }
+    function mostra(frase){
+
+        document.write(frase);
+    }
+    function calculoConverter(dolar, real){
+
+        return dolar * 4.15;
+    }
+
+    var informaValor = prompt("Informe o valor em dólar");
+    var valor = calculoConverter(informaValor);
+
+    if (informaValor == 1){
+        mostra(informaValor + " dólar americano equivale à " + valor);
+    }else{
+        mostra(informaValor + " dólares americano equivale à " + valor);
+    }
+
+</script>

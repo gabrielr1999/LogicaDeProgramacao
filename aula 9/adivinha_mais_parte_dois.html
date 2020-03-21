@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<input/> <!--Entrada de dados-->
+<button>Compare com meu segredo</button><!--Botão-->
+
+<script>
+
+    var segredos = [5,7,10,2,3];
+    var input = document.querySelector("input");//querySelector pega do mundo HTML a tag 'input' e joga na variável para poder trabalhar no mundo JavaScript 
+    input.focus();
+
+    function verifica(){
+
+        var achou = false;
+        for( var posicao = 0; posicao < segredos.length; posicao++){
+
+            if(segredos[posicao] == input.value){
+                alert("Você ACERTOU!!!");
+                achou = true;
+                break;
+            }
+        }
+        if(achou == false){
+            alert("Você errou!!!");
+        }
+        input.value = "";
+        input.focus();
+    }
+   
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+</script>

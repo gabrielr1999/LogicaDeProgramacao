@@ -1,0 +1,86 @@
+<meta charset="UTF-8">
+<script>
+
+    /*function pulaLinha(){
+
+        document.write("<br><br>");
+    }
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+    function calculaImc(peso, altura){
+
+        var imc = peso / (altura*altura);  
+        mostra("O imc calculado é " + imc);      
+    }
+
+    calculaImc(80,1.71);
+    calculaImc(68, 1.72);*/
+
+    /*se eu quiser somar os dois imc's
+    function pulaLinha(){
+
+        document.write("<br><br>");
+    }
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+    function calculaImc(peso, altura){
+
+        var imc = peso / (altura*altura);  
+        return imc;
+    }
+
+    var imcGabriel = calculaImc(80,1.71);
+    var imcAmigo = calculaImc(68, 1.72);
+    var somaDosImc = imcGabriel + imcAmigo;
+
+    mostra(imcGabriel);
+    mostra(imcAmigo);
+    mostra(somaDosImc);*/
+
+    /*outra forma de calcular vários imc's
+    function pulaLinha(){
+
+        document.write("<br><br>");
+    }
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+    function calculaImc(peso, altura){
+
+        return peso / (altura*altura);  
+    }
+
+    var somaDosImc = calculaImc(80, 1.71) + calculaImc(68, 1.72);
+
+    mostra("A soma dos imc's é: " + somaDosImc);*/
+
+    //Interagindo com o usuário
+    function pulaLinha(){
+
+        document.write("<br><br>");
+    }
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+    function calculaImc(peso, altura){
+
+        return peso / (altura*altura); 
+    }
+    var nome = prompt("Informe su nome");
+    var pesoInformado = prompt(nome + ", Informe seu peso");
+    var alturaInformada = prompt(nome + ", Informe sua altura");
+    var imc = calculaImc(pesoInformado, alturaInformada);
+
+    mostra(nome + ", o seu imc calculado é " + imc);
+   
+</script>

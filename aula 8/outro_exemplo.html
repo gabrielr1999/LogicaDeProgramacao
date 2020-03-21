@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+    <!--ler do mundo HTML um texto digitado pelo usuário e no clique de um botão exibir o que foi digitado"-->
+    <input>
+    <button>Exibir texto digitado</button>
+
+<script>
+
+    var input = document.querySelector("input");
+    function exibeTexto(){
+        alert(input.value);
+    } 
+
+    var button = document.querySelector("button");
+    button.onclick = exibeTexto;
+
+</script>

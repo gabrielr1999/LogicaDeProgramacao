@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<input/> <!--Entrada de dados-->
+<button>Compare com meu segredo</button><!--Botão-->
+
+<script>
+
+    var segredo = Math.round(Math.random() * 10);
+    var input = document.querySelector("input");//querySelector pega do mundo HTML a tag 'input' e joga na variável para poder trabalhar no mundo JavaScript 
+    input.focus();
+
+    function verifica(){
+        if(segredo == input.value){
+            alert("Você ACERTOU!!!");
+        }else{
+            alert("Você errou!!!");
+        } 
+        input.value = "";
+        input.focus();
+    }
+   
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+</script>
